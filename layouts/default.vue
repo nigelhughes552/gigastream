@@ -1,11 +1,19 @@
 <template>
   <v-app>
-    <v-app-bar fixed app height="130px">
-      <h1>Gigastream plc</h1>
+    <v-toolbar min-height="130px" max-height="130px">
+      <v-toolbar-title>Gigastream plc</v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <nuxt-link to="/"> <img width="150px" height="117px" src="gigastreamLogo150.gif"/></nuxt-link>
-    </v-app-bar>
+
+      <v-toolbar-items>
+        <v-btn href="/places" nuxt text>where we are</v-btn>
+
+        <v-btn href="/nominet" nuxt text>Nominet Info</v-btn>
+        <v-btn href="/technical" nuxt text>technical information</v-btn>
+        <nuxt-link to="/"> <v-img class="mt-1" src="gigastreamLogo150.gif"/></nuxt-link>
+      </v-toolbar-items>
+    </v-toolbar>
+
     <v-content>
       <v-container>
         <nuxt />
