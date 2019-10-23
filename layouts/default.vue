@@ -10,7 +10,7 @@
 
         <v-btn href="/nominet" nuxt text>Nominet Info</v-btn>
         <v-btn href="/technical" nuxt text>technical information</v-btn>
-        <nuxt-link to="/"> <v-img class="mt-1" src="gigastreamLogo150.gif"/></nuxt-link>
+        <nuxt-link to="/"> <img class="mt-1" src="@/assets/gigastreamLogo150.gif"/></nuxt-link>
       </v-toolbar-items>
     </v-toolbar>
 
