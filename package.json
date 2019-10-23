@@ -1,0 +1,25 @@
+{
+  "name": "gigastream",
+  "version": "1.0.0",
+  "description": "My luminous Nuxt.js project",
+  "author": "Nigel Hughes",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0",
+    "eslint": "^6.5.1",
+    "eslint-plugin-vue": "^5.2",
+    "eslint-plugin-vuetify": "^1.0.0-beta.5"
+  }
+}
