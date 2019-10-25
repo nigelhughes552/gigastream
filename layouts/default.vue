@@ -1,43 +1,73 @@
 <template>
-  <v-app>
-    <v-toolbar min-height="130px" max-height="130px">
-      <v-toolbar-title>Gigastream plc</v-toolbar-title>
+	<v-app>
+		<v-navigation-drawer v-model="drawer" app>
+			<v-list dense nav>
+				<v-list-item href="/" nuxt>
+					<v-list-item-action>
+						Home
+					</v-list-item-action>
+				</v-list-item>
+				<v-list-item href="/places" nuxt>
+					<v-list-item-action>
+						where we are
+					</v-list-item-action>
+				</v-list-item>
+				<v-list-item href="/technical" nuxt>
+					<v-list-item-action>
+						Technical Info
+					</v-list-item-action>
+				</v-list-item>
+				<v-list-item href="/nominet" nuxt>
+					<v-list-item-action>
+						Nominet
+					</v-list-item-action>
+				</v-list-item>
+			</v-list>
+		</v-navigation-drawer>
 
-      <v-spacer></v-spacer>
+		<v-app-bar app height="140px" short:true>
+			<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+			<v-toolbar-title>Gigastream plc</v-toolbar-title>
+			<v-spacer></v-spacer>
+			<nuxt-link to="/">
+				<img class="mt-1" height="117px" width="150px" src="/gigastreamLogo.png"
+			/></nuxt-link>
+		</v-app-bar>
 
-      <v-toolbar-items>
-        <v-btn href="/places" nuxt text>where we are</v-btn>
+		<v-content>
+			<v-container fluid>
+				<nuxt />
+			</v-container>
+		</v-content>
 
-        <v-btn href="/nominet" nuxt text>Nominet Info</v-btn>
-        <v-btn href="/technical" nuxt text>technical information</v-btn>
-        <nuxt-link to="/"> <img class="mt-1" height="117px" width="150px" src="/gigastreamLogo.png"/></nuxt-link>
-      </v-toolbar-items>
-    </v-toolbar>
-
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
-
-    <v-footer app>
-      <span>&copy; Gigastream plc 2019</span>
-      <v-spacer></v-spacer
-      ><span class="caption">The Gigastream logo is a registered trade mark of Gigastream plc.</span>
-    </v-footer>
-  </v-app>
+		<v-footer app>
+			<span>&copy; Gigastream plc 2019</span>
+			<v-spacer></v-spacer
+			><span class="caption"
+				>The Gigastream logo is a registered trade mark of Gigastream plc.</span
+			>
+		</v-footer>
+	</v-app>
 </template>
 
 <style>
 .h2 {
-  color: #f8981d;
+	color: #f8981d;
 }
 </style>
 
+
+
 <script>
 export default {
-  data() {
-    return {};
-  },
+	props: {
+		source: String,
+	},
+	data: () => ({
+		drawer: false,
+	}),
 };
 </script>
+
+
+
