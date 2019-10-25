@@ -1,17 +1,11 @@
 <template>
 	<div>
-		<v-row>
-			<v-col class="justify-end">
-				<v-spacer></v-spacer>
-				<nuxt-link to="/">
-					<img
-						class="mt-1"
-						height="117px"
-						width="150px"
-						src="/gigastreamLogo.png"
-				/></nuxt-link>
-			</v-col>
-		</v-row>
+		<v-layout align-end justify-end>
+			<nuxt-link to="/">
+				<img height="117px" width="150px" src="/gigastreamLogo.png"
+			/></nuxt-link>
+		</v-layout>
+
 		<v-row>
 			<v-col>
 				<h2>Nominet information</h2>

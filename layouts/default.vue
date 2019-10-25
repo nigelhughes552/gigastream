@@ -25,17 +25,13 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-app-bar app height="140px" short:true>
+		<v-app-bar app>
 			<v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 			<v-toolbar-title>Gigastream plc</v-toolbar-title>
-			<v-spacer></v-spacer>
-			<nuxt-link to="/">
-				<img class="mt-1" height="117px" width="150px" src="/gigastreamLogo.png"
-			/></nuxt-link>
 		</v-app-bar>
 
 		<v-content>
-			<v-container fluid>
+			<v-container>
 				<nuxt />
 			</v-container>
 		</v-content>
