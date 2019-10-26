@@ -32,14 +32,19 @@
 
 		<v-content>
 			<v-container>
+				<v-layout align-end justify-end>
+					<nuxt-link to="/">
+						<img height="117px" width="150px" src="/gigastreamLogo.png"
+					/></nuxt-link>
+				</v-layout>
 				<nuxt />
 			</v-container>
 		</v-content>
 
-		<v-footer app>
+		<v-footer app class="caption">
 			<span>&copy; Gigastream plc 2019</span>
 			<v-spacer></v-spacer
-			><span class="caption"
+			><span
 				>The Gigastream logo is a registered trade mark of Gigastream plc.</span
 			>
 		</v-footer>

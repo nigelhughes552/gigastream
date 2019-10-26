@@ -1,10 +1,6 @@
 <template>
 	<div>
-		<v-layout align-end justify-end>
-			<nuxt-link to="/">
-				<img height="117px" width="150px" src="/gigastreamLogo.png"
-			/></nuxt-link>
-		</v-layout>
+	
 
 		<v-row>
 			<v-col>
