@@ -30,34 +30,20 @@
 			<v-toolbar-title>Gigastream plc</v-toolbar-title>
 		</v-app-bar>
 
-		<v-content>
-			<v-container>
-				<v-layout align-end justify-end>
-					<nuxt-link to="/">
-						<img height="117px" width="150px" src="/gigastreamLogo.png"
-					/></nuxt-link>
-				</v-layout>
-				<nuxt />
-			</v-container>
-		</v-content>
+		<v-container>
+			<v-row style="margin-top:70px;" justify="end">
+				<nuxt-link to="/"> <img height="117px" width="150px" src="/gigastreamLogo.png"/></nuxt-link>
+			</v-row>
+			<nuxt />
+		</v-container>
 
 		<v-footer app class="caption">
 			<span>&copy; Gigastream plc 2019</span>
-			<v-spacer></v-spacer
-			><span
-				>The Gigastream logo is a registered trade mark of Gigastream plc.</span
-			>
+			<v-spacer></v-spacer>
+			<span> The Gigastream logo is a registered trade mark of Gigastream plc.</span>
 		</v-footer>
 	</v-app>
 </template>
-
-<style>
-.h2 {
-	color: #f8981d;
-}
-</style>
-
-
 
 <script>
 export default {
@@ -69,6 +55,3 @@ export default {
 	}),
 };
 </script>
-
-
-
