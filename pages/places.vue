@@ -14,6 +14,7 @@
         <v-icon> mdi-fax </v-icon>+44 (0)8700 242002
       </v-col>
     </v-row>
+
     <v-row>
       <v-img :src="require('~/assets/map.png')" />
     </v-row>
