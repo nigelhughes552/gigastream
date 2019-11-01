@@ -34,7 +34,7 @@ export default {
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#F8981d',
+    color: 'blue',
     height: '5px',
   },
   /*
@@ -52,10 +52,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    'nuxt-rfg-icon',
-    '@nuxtjs/pwa'
-  ],
+  modules: ['nuxt-rfg-icon', '@nuxtjs/pwa'],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
