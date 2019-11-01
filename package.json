@@ -16,7 +16,8 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-rfg-icon": "^0.6.4"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
