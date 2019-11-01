@@ -1,3 +1,10 @@
 h2 {
   color: #F8981d
 }
+.page-enter-active, .page-leave-active {
+transition: all 0.25s;
+}
+.page-enter, .page-leave-active {
+opacity: 0;
+transform: scale(2);
+}
