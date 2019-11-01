@@ -8,7 +8,9 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "ntlm-proxy": "start /min \"ntlm-proxy\" cmd /c node_modules\\.bin\\ntlm-proxy",
+    "cypress-ntlm": "npm run ntlm-proxy && (cypress-ntlm open & ntlm-proxy-exit)"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
@@ -18,6 +20,8 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
+    "cypress": "^3.5.0",
+    "cypress-ntlm-auth": "^2.0.2",
     "eslint": "^6.5.1",
     "eslint-plugin-vue": "^5.2",
     "eslint-plugin-vuetify": "^1.0.0-beta.5"
